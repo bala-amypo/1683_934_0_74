@@ -21,7 +21,8 @@ public class StudentServiceImpl implements StudentService {
         return studentRespository.findById(id);
     }
       @Override
-    public void delete<student> getOneStudent(Long id){
-        return studentRespository.findById(id);
+    public void deleteStudent(Long id){
+        studentRespository.deleteById(id);
     }
-    
+}
+
